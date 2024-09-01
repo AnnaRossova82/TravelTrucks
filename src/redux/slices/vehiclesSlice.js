@@ -51,6 +51,9 @@ const vehiclesSlice = createSlice({
       state.status = 'idle';
       state.error = null;
     },
+    setFilters: (state, action) => {
+    state.filters = action.payload;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -70,6 +73,6 @@ const vehiclesSlice = createSlice({
   },
 });
 
-export const { resetVehicles } = vehiclesSlice.actions;
+export const { resetVehicles, setFilters } = vehiclesSlice.actions;
 export default vehiclesSlice.reducer;
 

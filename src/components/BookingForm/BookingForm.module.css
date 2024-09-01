@@ -4,7 +4,7 @@
     padding: 44px;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Вирівнюємо елементи по початку */
     gap: 24px;
     border-radius: 10px;
     border: 1px solid #DADDE1; 
@@ -16,6 +16,7 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
+    margin-bottom: 8px; /* Відстань між заголовком і абзацом */
 }
 
 .bookingForm p {
@@ -23,6 +24,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 24px; /* Відстань після абзацу */
 }
 
 .bookingForm form {
@@ -33,8 +35,8 @@
     align-items: center;
 }
 
-.bookingForm input,
-.bookingForm textarea {
+.inputField,
+.textarea {
     width: 100%; 
     padding: 12px; 
     border: 1px solid #ccc; 
@@ -43,7 +45,18 @@
     background-color: #F7F7F7;
 }
 
-.bookingForm textarea {
+
+
+.datePicker {
+    width: 548px; 
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #F7F7F7;
+}
+
+.textarea {
     resize: vertical; 
 }
 
@@ -68,4 +81,10 @@
 
 .btnRed:hover {
     background-color: #c0392b;
+}
+
+.errorMessage {
+    color: #E44848;
+    font-size: 14px;
+    font-weight: 400;
 }

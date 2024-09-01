@@ -1,30 +1,33 @@
 import { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { enGB } from 'date-fns/locale';
 import styles from './BookingForm.module.css';
 
 const BookingForm = () => {
+  const [startDate, setStartDate] = useState(null);
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-  const [errorMessage, setErrorMessage] = useState(''); 
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     const nameInput = event.target.querySelector('input[type="text"]');
     const emailInput = event.target.querySelector('input[type="email"]');
-    const dateInput = event.target.querySelector('input[type="date"]');
 
     const isValidName = nameInput.value.trim() !== '';
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value);
-    const isValidDate = dateInput.value !== '';
+    const isValidDate = startDate !== null;
 
-    const selectedDate = new Date(dateInput.value);
+    const selectedDate = startDate;
     const today = new Date();
-    today.setHours(0, 0, 0, 0); 
+    today.setHours(0, 0, 0, 0);
 
     const isFutureDate = selectedDate > today;
 
     if (isValidName && isValidEmail && isValidDate && isFutureDate) {
       setIsFormSubmitted(true);
-      setErrorMessage(''); 
+      setErrorMessage('');
     } else {
       if (!isFutureDate) {
         setErrorMessage('Please choose a future date.');
@@ -45,14 +48,24 @@ const BookingForm = () => {
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Name*" required />
-          <input type="email" placeholder="Email*" required />
-          <input type="date" placeholder="Booking date*" required />
-          <textarea placeholder="Comment" rows="4"></textarea>
+          <input type="text" placeholder="Name*" required className={styles.inputField} />
+          <input type="email" placeholder="Email*" required className={styles.inputField} />
+          <div className={styles.datePickerWrapper}>
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+              locale={enGB}
+              placeholderText="Booking date*"
+              minDate={new Date()}
+              dateFormat="dd/MM/yyyy"
+              className={styles.datePicker}
+            />
+          </div>
+          <textarea placeholder="Comment" rows="4" className={styles.textarea}></textarea>
           <button type="submit" className={styles.btnRed}>Submit</button>
         </form>
       )}
-      {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>} 
+      {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
     </div>
   );
 };

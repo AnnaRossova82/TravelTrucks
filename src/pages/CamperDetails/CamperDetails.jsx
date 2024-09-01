@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import styles from './CamperDetails.module.css';
@@ -47,7 +47,9 @@ const CamperDetails = () => {
             <div className={styles.price}>€{camper.price}</div>
             <div className={styles.imageGallery}>
                 {camper.gallery.map((image, index) => (
-                    <img key={index} src={image.original} alt={`camper ${index}`} />
+                    <div key={index} className={styles.imageWrapper}>
+                        <img src={image.original} alt={`camper ${index}`} className={styles.image} />
+                    </div>
                 ))}
             </div>
             <p className={styles.description}>{camper.description}</p>

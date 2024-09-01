@@ -92,6 +92,10 @@ line-height: 24px;
     background-color: var(--Gray-light, #f0f0f0);
 }
 
+.filterItem input[type="checkbox"]:checked + label:hover {
+    background-color: var(--Gray-checked, #d0d0d0);
+}
+
 .btnRed {
     display: flex;
     flex-direction: row;
