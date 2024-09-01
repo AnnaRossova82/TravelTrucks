@@ -1,0 +1,71 @@
+.bookingForm {
+    display: flex;
+    width: 553px;
+    padding: 44px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    border-radius: 10px;
+    border: 1px solid #DADDE1; 
+    margin-top: 44px;
+}
+
+.bookingForm h3 {
+    color: #101828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.bookingForm p {
+    color: #6C717B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.bookingForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%; 
+    align-items: center;
+}
+
+.bookingForm input,
+.bookingForm textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    background-color: #F7F7F7;
+}
+
+.bookingForm textarea {
+    resize: vertical; 
+}
+
+.btnRed {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 166px;
+    height: 56px;
+    padding: 16px 60px;
+    gap: 10px;
+    border: none;
+    border-radius: 200px;
+    background: #E44848;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.08px;
+    margin-top: 20px; 
+}
+
+.btnRed:hover {
+    background-color: #c0392b;
+}

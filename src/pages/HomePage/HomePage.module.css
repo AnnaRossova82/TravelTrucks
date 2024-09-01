@@ -1,0 +1,66 @@
+.heroSection {
+    background: linear-gradient(
+            0deg, 
+            rgba(0, 0, 0, 0.20) 0%, 
+            rgba(0, 0, 0, 0.20) 100%
+        ), 
+        url('../../assets/background-image.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex;
+
+    align-items: center; 
+    position: relative; 
+}
+
+.heroContent {
+    text-align: left; 
+    padding-left: 64px; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 0;
+    color: #F7F7F7; 
+}
+
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 16px 0;
+    color: #F7F7F7; 
+}
+
+.btnRed {
+    display: flex;
+    flex-direction: row;
+    width: 166px;
+    height: 56px;
+    padding: 16px 60px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; 
+    gap: 10px;
+    border: none;
+    border-radius: 200px;
+    background:  #E44848;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.08px;
+}
+
+.btnRed:hover {
+    background-color: #c0392b;
+}

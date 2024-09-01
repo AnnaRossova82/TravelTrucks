@@ -1,0 +1,117 @@
+.locationSelect {
+    width: 40%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.title{
+color:  #6C717B;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; 
+}
+
+.city{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+align-items: center;
+}
+
+.describe{
+color:  #101828;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px; 
+}
+
+.line{
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.cardsList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+
+}
+
+.mapIcon{
+    width: 20px;
+    height: 20px;
+ }
+
+.filterCategory {
+    margin-bottom: 20px;
+}
+
+.filterOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.filterItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 112px;
+    height: 96px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    border: 1px solid var(--Gray-light, #DADDE1);
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    text-align: center;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+    fill: currentColor; 
+}
+
+.filterItem span {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.filterItem input[type="checkbox"],
+.filterItem input[type="radio"] {
+    display: none;
+}
+
+.filterItem:hover {
+    background-color: var(--Gray-light, #f0f0f0);
+}
+
+.btnRed {
+    display: flex;
+    flex-direction: row;
+    width: 166px;
+    height: 56px;
+    padding: 16px 60px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; 
+    gap: 10px;
+    border: none;
+    border-radius: 200px;
+    background:  #E44848;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; 
+    letter-spacing: -0.08px;
+}
+
+.btnRed:hover {
+    background-color: #c0392b;
+}

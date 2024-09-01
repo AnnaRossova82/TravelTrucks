@@ -1,0 +1,67 @@
+.customSelect {
+    position: relative;
+    display: inline-block;
+}
+
+.selectedOption {
+    width: 360px;
+    height: 36px;
+    padding: 8px 15px; 
+    border: 1px solid #DADDE1;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.mapIcon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.arrowIcon {
+    margin-left: auto;
+    width: 12px;
+    height: 12px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 360px;
+    background-color: rgb(174, 165, 165);
+    border: 1px solid #DADDE1;
+    border-radius: 4px;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.optionsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.optionItem {
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff; 
+}
+
+.optionItem:hover {
+    background-color: #555;
+}
+
+.icon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}

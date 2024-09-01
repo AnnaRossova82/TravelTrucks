@@ -1,0 +1,48 @@
+.reviews {
+    display: flex;
+    width: 631px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 44px;   
+    background-color: #FFF; 
+    margin-top: 56px;
+}
+
+.reviews .reviewItem {
+    display: flex;
+    gap: 44px;
+}
+
+.starIcon {
+    width: 16px; 
+    height: 16px;
+}
+
+.reviewerInitial {
+    width: 60px;
+    height: 60px;
+    color: #E44848;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 60px; 
+    border-radius: 50%; 
+    background: var(--Badges, #F2F4F7);
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.reviewerName{
+    color:  #101828;
+       font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;   
+}
+
+.comment {
+color: #475467;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px; 
+margin-top: 16px;
+}

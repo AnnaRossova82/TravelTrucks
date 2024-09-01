@@ -1,0 +1,143 @@
+.vehicleCard {
+    display: flex;
+    width: 888px;
+    height: 368px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.vehicleImage {
+    width: 292px;
+    height: 320px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 24px;
+}
+
+.vehicleContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vehicleTitle {
+    color:  #101828;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px; 
+    
+}
+
+.vehiclePrice {
+    color:  #101828;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px; 
+    
+}
+
+.heart{
+    width: 26px;
+    height: 24px;
+    margin-left: 12px; 
+}
+
+.ratingLocationContainer {
+    display: flex;
+    justify-content: start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.starIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.ratingText {
+    font-size: 14px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.mapIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.vehicleDescription {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.featureIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 16px;
+  
+
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    background: #F2F4F7;
+    padding: 12px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    border-radius: 100px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.btnShowMore {
+display: flex;
+flex-direction: row;
+width: 166px;
+height: 56px;
+padding: 16px 60px;
+justify-content: center;
+align-items: center;
+white-space: nowrap; 
+gap: 10px;
+border: none;
+border-radius: 200px;
+background:  #E44848;
+color: #FFF;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px; 
+letter-spacing: -0.08px;
+}
+
+.btnShowMore:hover {
+    background:  #D84343;
+}

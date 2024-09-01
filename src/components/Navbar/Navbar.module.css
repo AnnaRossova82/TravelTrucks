@@ -1,0 +1,49 @@
+:root {
+    --Badges: #F2F4F7;
+    --Inputs: #F7F7F7;
+    --ButtonHover: #D84343;
+}
+
+.navbar {
+    display: flex;
+    width: 1440px;
+    padding: 24px 64px;
+    align-items: center;
+    gap: 450px;
+    border-bottom: 1px solid var(--Badges);
+    background: var(--Inputs);
+}
+
+.navbarBrand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbarLinks {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+  
+    border: 1px solid var(--Badges);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navButton:hover {
+    color: var(--ButtonHover);
+
+}
+
+.logoIcon {
+    width: 136px;  
+    height: 16px;    
+  }

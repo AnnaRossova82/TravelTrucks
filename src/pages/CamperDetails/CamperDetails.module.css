@@ -1,0 +1,99 @@
+
+.innerContainer {
+    display: flex;          
+    flex-direction: row;   
+    gap: 40px;            
+    width: 100%;  }
+
+.bookingFormContainer {
+    flex: 0 0 auto; 
+}
+
+.vehicleDetails {
+    padding: 48px 64px 80px 64px;
+    background-color: #fff;
+}
+
+.camperName {
+    color: var(--Main, #101828);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.ratingLocationContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.starIcon {
+    width: 16px;
+    height: 16px;
+    padding-right: 4px;
+}
+
+.mapIcon {
+    width: 16px;
+    height: 16px;
+    padding-right: 4px;
+    padding-left: 12px;
+}
+
+.location {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 16px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.imageGallery {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.imageGallery img {
+    width: 292px;
+    height: 312px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.description {
+    color: #475467;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.detailsLinks {
+    color: #101828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    display: flex;
+    gap: 40px;
+}
+
+.detailsLink.active {
+    position: relative;
+}
+
+.detailsLink.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 0px;
+    border-bottom: 5px solid var(--Button, #E44848);
+}
